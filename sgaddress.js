@@ -1,4 +1,5 @@
 //use data-step in toggle element to indicate which step it is, step 1 will have z-index = 4 -1
+var Sitegui = Sitegui || {}
 Sitegui.Address = new function() {
   this.completed = 0
   //send ajax request
