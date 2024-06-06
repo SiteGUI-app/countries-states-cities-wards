@@ -15,4 +15,4 @@ Include the following script in your page:
 
 Add a wrapper around your address input fields and change data-selector-* to relevant input's ID/class:
 
-```<div class="sg-js-address" data-addr-add="1" data-default-country="VN" data-selector-country="select.billing-country" data-selector-state=".sg-address-state" data-selector-zip=".sg-address-zip" data-selector-city=".sg-address-city-input" data-selector-street2=".sg-address-street2">```
+```<div class="sg-js-address" data-addr-add="1" data-default-country="US" data-selector-country="select.billing-country" data-selector-state=".sg-address-state" data-selector-zip=".sg-address-zip" data-selector-city=".sg-address-city-input" data-selector-street2=".sg-address-street2">```
