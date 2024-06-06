@@ -97,7 +97,7 @@ Sitegui.Address = new function() {
       target.setAttribute('readonly', true) 
       var li = document.createElement("li");
       li.classList.add('bg-warning-subtle', 'position-sticky', 'top-0', 'pt-2')
-      li.innerHTML = '<span class="float-end me-2"><i class="bi bi-x-lg text-secondary" role="button"></i></span><div class="sg-dropdown-header ms-3 fw-semibold"></div><div class="input-group p-2"><input class="form-control rounded-0 shadow-none z-1">\
+      li.innerHTML = '<span class="float-end me-2"><b class="bi bi-x-lg text-secondary" role="button">x</b></span><div class="sg-dropdown-header ms-3 fw-semibold"></div><div class="input-group p-2"><input class="form-control rounded-0 shadow-none z-1">\
       <span class="input-group-text bg-transparent border-0 position-absolute end-0 pt-2 z-2">🔍</span></div>' 
       li.querySelector('.sg-dropdown-header').innerText = target.getAttribute('placeholder')
       menu.prepend(li)
