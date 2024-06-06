@@ -97,7 +97,7 @@ Sitegui.Address = new function() {
       target.setAttribute('readonly', true) 
       var li = document.createElement("li");
       li.classList.add('bg-warning-subtle', 'position-sticky', 'top-0', 'pt-2')
-      li.innerHTML = '<span class="float-end me-2"><b class="bi bi-x-lg text-secondary" role="button">x</b></span><div class="sg-dropdown-header ms-3 fw-semibold"></div><div class="input-group p-2"><input class="form-control rounded-0 shadow-none z-1">\
+      li.innerHTML = '<span class="float-end me-2"><b class="bi bi-x-lg text-secondary" role="button">✕</b></span><div class="sg-dropdown-header ms-3 fw-semibold"></div><div class="input-group p-2"><input class="form-control rounded-0 shadow-none z-1">\
       <span class="input-group-text bg-transparent border-0 position-absolute end-0 pt-2 z-2">🔍</span></div>' 
       li.querySelector('.sg-dropdown-header').innerText = target.getAttribute('placeholder')
       menu.prepend(li)
@@ -106,7 +106,7 @@ Sitegui.Address = new function() {
       if (params.add > 0) {
         var li = document.createElement("li");
         li.classList.add('dropdown-item', 'd-none')
-        li.innerHTML = '<i class="bi bi-plus-lg"></i><span class="sg-js-add ps-3"></span>' 
+        li.innerHTML = '<b class="bi bi-plus-lg"></b><span class="sg-js-add ps-3"></span>' 
         li.addEventListener('click', function(){
           target.value = this.querySelector('.sg-js-add').innerText
           this.parentNode.childNodes.forEach(el => {
