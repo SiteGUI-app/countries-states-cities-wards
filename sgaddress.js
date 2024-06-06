@@ -106,7 +106,7 @@ Sitegui.Address = new function() {
       if (params.add > 0) {
         var li = document.createElement("li");
         li.classList.add('dropdown-item', 'd-none')
-        li.innerHTML = '<b class="bi bi-plus-lg"></b><span class="sg-js-add ps-3"></span>' 
+        li.innerHTML = '<b class="bi bi-plus-lg">+</b><span class="sg-js-add ps-3"></span>' 
         li.addEventListener('click', function(){
           target.value = this.querySelector('.sg-js-add').innerText
           this.parentNode.childNodes.forEach(el => {
